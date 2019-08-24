@@ -1,0 +1,133 @@
+body {
+    background: #f2fbf5;
+}
+
+main {
+    max-width: 610px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ff763b;
+}
+
+.user-display {
+    text-align: center;
+    color: #ff763b;
+    border: 2px solid #ff763b;
+    border-radius: 10px;
+    display: inline-table;
+    width: 15%;
+    margin-right: 5px;
+}
+
+.instructions {
+    text-align: left;
+    padding-left: 5px;
+    color:  #ff763b;
+    border: 2px solid  #ff763b;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+#messageBox {
+    text-align: center;
+    color:  #ff763b;
+    border: 2px solid  #ff763b;
+    border-radius: 10px;
+}
+
+.board {
+    margin-top: 2vh;
+    overflow: hidden;
+    display: grid;
+    gap: 0px;
+    width: 520px;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    grid-template-columns: repeat(10, 1fr);
+    border: 4px solid #999;
+    border-bottom-width: 3px;
+    font-size: 0px;
+    background-color: #999;
+}
+
+.cell {
+    position: relative;
+    border-bottom: 4px solid #999;
+    border-right: 4px solid #999;
+    border-left: 4px solid #fff;
+    border-top: 4px solid #fff;
+    background-color: #dddddd;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    font-size: 0px;
+    -webkit-user-select: none;
+}
+.cell:hover{
+    background: #fff;
+}
+
+.cell .text {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.severity1 {
+    color: #4444cc;
+}
+.severity2 {
+    color: #999922;
+}
+.severity3, .severity4, .severity5, .severity6, .severity7, .severity8 {
+    color: #992222;
+}
+.board .cell.clear {
+    border-color: rgba(0, 0, 0, 0.3);
+    border-width: 1px;
+    width: 48px;
+    height: 48px;
+}
+
+
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff763b;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px #999;
+}
+
+.button:hover {background-color:  #ff763b}
+
+.button:active {
+    background-color: #ff763b;
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+}
